@@ -72,7 +72,7 @@ Option                 | Type                | Default       | Description
 `getFeatureId(<GeoJSON> featureData)`         | `Function`          | Returns `featureData.properties.id` | Function used to get an identifier uniquely identify a feature over time
 `updateFeature(<GeoJSON> featureData, <ILayer> oldLayer)`                 | `Function` | Special | Used to update an existing feature's layer; by default, points (markers) are updated, other layers are discarded and replaced with a new, updated layer. Allows to create more complex transitions, for example, when a feature is updated |
 `container`            | `LayerGroup`        | L.geoJson()   | Specifies the layer instance to display the results in
-`removeMissing`        | `Boolean`           | `false`   | Should missing features between updates been automatically removed from the layer
+`removeMissing`        | `Boolean`           | `true`   | Should missing features between updates been automatically removed from the layer
 
 ##### Events
 
